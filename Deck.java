@@ -37,9 +37,8 @@ public class Deck {
 	public Card getOneCard() {
 		//Card getCard;
 		//getCard = cards.get(nUsed);
-		
-		usedCard.add(cards.get(nUsed));
 		nUsed++;
+		usedCard.add(cards.get(nUsed-1));
 		if (nUsed == 52) {
 			shuffle();
 		}
